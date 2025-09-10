@@ -67,7 +67,7 @@ val_generator = val_datagen.flow_from_directory(
 
 # ---- Compile your model ----
 model.compile(
-    optimizer=tf.keras.optimizers.Adam(1e-4),
+    optimizer=tf.keras.optimizers.Adam(1e-5),
     loss='categorical_crossentropy',
     metrics=["accuracy"]
 )
