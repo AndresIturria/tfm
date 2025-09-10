@@ -1,3 +1,7 @@
+
+
+
+
 import tensorflow as tf
 from tensorflow.keras import layers, models
 from tensorflow.keras.applications import VGG19
@@ -65,7 +69,7 @@ model = models.Sequential([
     layers.Dense(train_generator.num_classes, activation='softmax')
 ])
 
-model.compile(optimizer=Adam(learning_rate=1e-3), loss='categorical_crossentropy', metrics=['accuracy'])
+model.compile(optimizer=Adam(learning_rate=1e-5), loss='categorical_crossentropy', metrics=['accuracy'])
 
 # ----------------------------- #
 # EARLY STOPPING
